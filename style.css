@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #E4EDF8;
+    display: flex;
+    justify-content: center;
+}
+
+.cards{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    margin-top: 40px;
+
+    .card{
+        width: 203px;
+        height: 288px;
+        background-color: white;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        box-shadow: 0 4px 8px #9DB3CE;
+
+        .card_type{
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            position: absolute;
+            top: 13px;
+            left: 7px;
+        }
+
+        .image{
+            width: 135px;
+            height: 216px;
+            border: 2px solid black;
+        }
+
+        .card_type_reverse{
+            transform: rotate(180deg);
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            position: absolute;
+            bottom: 13px;
+            right: 7px;
+        }
+    }
+}
